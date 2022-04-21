@@ -1,0 +1,117 @@
+footer {
+    margin: 20px 20px;
+
+    & .footer-area {
+        background: var(--primary-color);
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1479' height='408' preserveAspectRatio='none' viewBox='0 0 1479 408'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1327%26quot%3b)' fill='none'%3e%3crect width='1479' height='408' x='0' y='0' fill='rgba(152%2c 172%2c 177%2c 0.21)'%3e%3c/rect%3e%3cpath d='M0%2c381.314C72.618%2c373.584%2c135.848%2c341.29%2c205.75%2c320.153C306.758%2c289.61%2c454.395%2c323.415%2c502.343%2c229.412C549.491%2c136.979%2c416.501%2c44.886%2c398.259%2c-57.261C380.976%2c-154.037%2c462.756%2c-270.918%2c399.543%2c-346.206C336.566%2c-421.213%2c210.932%2c-371.208%2c115.647%2c-393.857C27.172%2c-414.887%2c-53.343%2c-504.082%2c-139.261%2c-474.279C-225.704%2c-444.294%2c-226.564%2c-317.04%2c-291.533%2c-252.615C-364.834%2c-179.929%2c-510.524%2c-176.67%2c-539.348%2c-77.547C-567.337%2c18.704%2c-477.372%2c109.406%2c-420.883%2c192.211C-372.074%2c263.758%2c-314.969%2c331.676%2c-235.967%2c367.172C-162.606%2c400.133%2c-79.974%2c389.827%2c0%2c381.314' fill='rgba(133%2c 157%2c 163%2c 0.21)'%3e%3c/path%3e%3cpath d='M1479 710.059C1555.271 710.96 1635.709 792.921 1699.425 750.988 1763.3690000000001 708.905 1727.057 604.784 1749.951 531.739 1769.046 470.814 1821.739 422.471 1822.399 358.627 1823.105 290.324 1790.83 227.307 1753.691 169.979 1712.052 105.70499999999998 1669.283 31.762 1596.076 9.274999999999977 1522.727-13.254999999999995 1448.717 32.516999999999996 1374.952 53.64499999999998 1300.638 74.93 1214.816 76.856 1162.25 133.534 1109.269 190.659 1092.964 275.312 1097.215 353.108 1101.086 423.95 1157.16 477.021 1184.597 542.4490000000001 1213.222 610.711 1197.57 709.196 1261.897 745.818 1326.952 782.855 1404.146 709.174 1479 710.059' fill='rgba(171%2c 187%2c 191%2c 0.21)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1327'%3e%3crect width='1479' height='408' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        padding: 30px 40px 40px 40px;
+
+        & .footer-item {
+            padding: 20px;
+
+            //footer alamat
+            & .footer-logo {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 36px;
+                color: var(--font-footer);
+            }
+
+            & p {
+                margin-top: 30px;
+                margin-bottom: 40px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: var(--font-footer);
+            }
+
+            & .social-media {
+                display: flex;
+
+                & a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    width: 40px;
+                    background: var(--btn-primary);
+                    margin: 0 8px;
+                    border-radius: 25%;
+                    text-align: center;
+                    color: var(--font-btn);
+                    font-size: 20px;
+                    text-decoration: none;
+                    transition: all 0.4s ease;
+
+                    &:hover {
+                        background: var(--btn-hover);
+                    }
+
+                    & i {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 26px;
+                    }
+                }
+
+            }
+
+            //footer kontak
+            & .h-item {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                color: var(--font-footer);
+
+            }
+
+            & ul.item {
+                margin-top: 30px;
+                text-decoration: none;
+                padding-left: 0px;
+
+                & li {
+                    list-style: none;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 20px;
+                    color: var(--font-footer);
+
+                    & i {
+                        font-size: 19px;
+                        margin-right: 15px;
+                    }
+
+                    //list tautan
+                    & a {
+                        text-decoration: none;
+                        color: var(--font-footer);
+
+                    }
+
+                }
+            }
+
+        }
+
+        & .copyright {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

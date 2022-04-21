@@ -1,0 +1,38 @@
+section.acara {
+
+    & .judul-acara {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+
+        & h1 {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            color: var(--font-h);
+        }
+    }
+
+    & .deskripsi {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0;
+        color: var(--font-p);
+        text-align: justify;
+
+        @include media-breakpoint-up(lg) {
+            margin: 50px 150px;
+        }
+
+    }
+
+    & .title-acara {
+        @include media-breakpoint-up(lg) {
+            & img {
+                height: 50%;
+                width: 50%;
+            }
+        }
+    }
+}

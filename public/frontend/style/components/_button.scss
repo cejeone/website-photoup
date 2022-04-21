@@ -1,0 +1,51 @@
+.btn {
+    box-shadow: none;
+    border: none;
+}
+
+.btn-custom {
+    background-color: var(--btn-primary);
+    border-radius: 15px;
+    padding: 11px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--font-btn);
+    position: relative;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    align-items: center;
+
+
+    &:hover {
+        background-color: var(--btn-hover);
+        color: var(--font-btn);
+    }
+
+    &.btn-mulai {
+        justify-content: center;
+        width: 100px;
+        box-shadow: none;
+        border: none;
+
+        & i.mulai {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+        }
+    }
+
+    &.btn-more {
+        margin: 20px 0;
+        width: 180px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        border: none;
+        text-decoration: none;
+
+        & i {
+            font-size: 27px;
+        }
+    }
+}
